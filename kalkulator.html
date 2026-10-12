@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <!-- Menghubungkan file CSS Eksternal -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- Layar Kalkulator -->
+        <input type="text" id="display" readonly value="0" />
+        
+        <!-- Papan Tombol -->
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="appendCharacter('/')" class="operator">/</button>
+            <button onclick="appendCharacter('*')" class="operator">*</button>
+            <button onclick="appendCharacter('-')" class="operator">-</button>
+
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('+')" class="operator">+</button>
+
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('.')">.</button>
+
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('0')">0</button>
+
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <!-- Menghubungkan file JavaScript Eksternal -->
+    <script src="assets/script.js"></script>
+</body>
+</html>
